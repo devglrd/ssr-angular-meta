@@ -1,9 +1,9 @@
 version: '3.5'
 services:
 
-  ssr:
+  ssr-2:
     image: node:14
-    container_name: ssr
+    container_name: ssr-2
     volumes:
       - "./:/app"
     command: bash -c "cd /app && npm i && npm run build:ssr && npm run serve:ssr "
