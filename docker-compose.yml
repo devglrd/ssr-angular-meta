@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+
+  ssr:
+    image: node:14
+    container_name: ssr
+    volumes:
+      - "./:/app"
+    command: bash -c "cd /app && npm i && npm run build:ssr && npm run serve:ssr "
+    ports:
+      - "4011:4000"

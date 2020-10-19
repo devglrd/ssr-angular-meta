@@ -18,16 +18,34 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.http.get('https://jsonplaceholder.typicode.com/posts/1').subscribe((data: any) => {
-      console.log(data, 'title');
-
-      this.meta.updateTag({name: 'og:title', content: data.title});
-      this.meta.updateTag({name: 'og:desc', content: data.title + '------- from appCompoenent'});
-
-
-    }, err => {
-      console.log(err);
-    });
+    // this.http.get('https://reqres.in/api/users?delay=3').subscribe((data: any) => {
+    //   console.log(data, 'title');
+    //
+    //   this.meta.updateTag({name: 'og:title', content: data.ad.company});
+    //   this.meta.updateTag({name: 'og:url', content: data.ad.url});
+    //
+    //
+    // }, err => {
+    //   console.log(err);
+    // });
+    //
+    // this.meta.updateTag({name: 'author', content: 'author'});
+    // // this.meta.updateTag({name: 'og:desc', content: data.title + '------- from appCompoenent'});
+    //
+    // this.http.get('https://api.be-u.kedge.edu/api/footer/legal-notices').subscribe((dataset: any) => {
+    //   console.log(dataset, 'title');
+    //   this.meta.addTag({name: 'og:type', content: 'zadaz'});
+    //   // this.meta.updateTag({name: 'og:desc', content: da.intro['fr']});
+    //   // this.meta.updateTag({name: 'title', content: da.title['fr']});
+    //
+    //   // this.meta.updateTag({name: 'og:image', content: da.get_file.file});
+    //   // this.meta.updateTag({name: 'og:type', content: 'website'});
+    //   // this.meta.updateTag({name: 'og:url', content: 'http://ingies.net:4010/news' + da.slug});
+    //
+    //
+    // }, err => {
+    //   console.log(err);
+    // });
 
 
   }

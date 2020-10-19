@@ -15,19 +15,19 @@ export class ThemeComponent implements OnInit {
 
 
   ngOnInit() {
-    this.http.get('https://jsonplaceholder.typicode.com/posts/1').subscribe((data: any) => {
-      console.log(data, 'desc');
-
-      this.meta.updateTag({name: 'og:description', content: data.title});
-
-
-      // this.meta.addTag({name: 'og:description', content: this.pipe.transform(this.chapter.intro)});
-      // this.meta.addTag({name: 'og:url', content: window.location.href});
-
-
-    }, err => {
-      console.log(err);
-    });
+    // this.http.get('https://jsonplaceholder.typicode.com/posts/1').subscribe((data: any) => {
+    //   console.log(data, 'desc');
+    //
+    //   this.meta.updateTag({name: 'og:description', content: data.title});
+    //
+    //
+    //   // this.meta.addTag({name: 'og:description', content: this.pipe.transform(this.chapter.intro)});
+    //   // this.meta.addTag({name: 'og:url', content: window.location.href});
+    //
+    //
+    // }, err => {
+    //   console.log(err);
+    // });
 
   }
 }
