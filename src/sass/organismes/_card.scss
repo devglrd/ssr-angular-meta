@@ -1,0 +1,291 @@
+@import '~bootstrap/scss/bootstrap-grid';
+@import "../../sass/base/variable";
+
+.card {
+    margin-bottom: $beu-card-margin-bottom;
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    border-radius: $beu-card-border-radius;
+    border: $beu-card-border;
+    box-shadow: $beu-card-shadow;
+    transition: $beu-transition;
+    overflow: hidden;
+
+    &.talent {
+        height: 100%;
+
+        .card__thumbnail {
+            border-bottom: 5px solid #5EBFBC;
+
+            &.no-border {
+                border-bottom: none;
+            }
+        }
+
+        .card__content {
+            padding-top: 30px;
+            min-height: 150px;
+        }
+
+        .card__body__content {
+            padding-top: 30px;
+        }
+    }
+
+    &__thumbnail {
+        width: 100%;
+        //min-height: 271.43px;
+        //max-height: $beu-card-thumbnail-size;
+        height: $beu-card-thumbnail-size;
+        overflow: hidden;
+        border-bottom: $beu-card-border;
+        background-color: $beu-background-dark;
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        padding: $beu-card-padding;
+        position: relative;
+
+        &__mark {
+            position: absolute;
+            top: -25%;
+            right: 20px;
+
+            .graph {
+                width: 100%;
+                height: 100%;
+
+                &-1 {
+                    padding: 2px;
+                    width: 75px;
+                    height: 75px;
+                    border: #b4b4b4 5px solid;
+                    border-radius: 100%;
+                }
+
+                &-2 {
+                    padding: 2px;
+                    width: 100%;
+                    height: 100%;
+                    border: #d6d5d5 5px solid;
+                    border-radius: 100%;
+                }
+
+                &-3 {
+                    width: 100%;
+                    height: 100%;
+                    border: #e7e7e7 5px solid;
+                    border-radius: 100%;
+                }
+            }
+
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        &__subtitle {
+            font-weight: bold;
+            font-size: 12px;
+            color: #666666;
+            margin-bottom: 10px;
+        }
+
+        &__description {
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #666666;
+            line-height: 19px;
+            overflow: hidden;
+            max-height: 60px;
+        }
+
+        &__tags {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            color: #5b5b5b;
+
+            .tag {
+                margin-right: 20px;
+                padding: 5px 20px 5px 0;
+
+                &:not(:last-child) {
+                    border-right: #d2d2d2 1px solid;
+                }
+            }
+        }
+
+        &__footer {
+
+            &__link {
+                &:not(:last-child) {
+                    border-right: 1px solid #E2E2E2;
+                    margin-right: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    &__body {
+        padding: $beu-card-padding;
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__mark {
+            position: absolute;
+            top: -25%;
+            right: 20px;
+
+            .graph {
+                width: 100%;
+                height: 100%;
+
+                &-1 {
+                    padding: 2px;
+                    width: 75px;
+                    height: 75px;
+                    border: #b4b4b4 5px solid;
+                    border-radius: 100%;
+                }
+
+                &-2 {
+                    padding: 2px;
+                    width: 100%;
+                    height: 100%;
+                    border: #d6d5d5 5px solid;
+                    border-radius: 100%;
+                }
+
+                &-3 {
+                    width: 100%;
+                    height: 100%;
+                    border: #e7e7e7 5px solid;
+                    border-radius: 100%;
+                }
+            }
+
+        }
+
+        &__content {
+
+            &__mark {
+                position: absolute;
+                top: -25%;
+                right: 20px;
+
+                .graph {
+                    width: 100%;
+                    height: 100%;
+
+                    &-1 {
+                        padding: 2px;
+                        width: 75px;
+                        height: 75px;
+                        border: #b4b4b4 5px solid;
+                        border-radius: 100%;
+                    }
+
+                    &-2 {
+                        padding: 2px;
+                        width: 100%;
+                        height: 100%;
+                        border: #d6d5d5 5px solid;
+                        border-radius: 100%;
+                    }
+
+                    &-3 {
+                        width: 100%;
+                        height: 100%;
+                        border: #e7e7e7 5px solid;
+                        border-radius: 100%;
+                    }
+                }
+
+            }
+
+            &__title {
+                font-weight: 700;
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+
+            &__subtitle {
+                font-weight: bold;
+                font-size: 12px;
+                color: #666666;
+                margin-bottom: 10px;
+            }
+
+            &__description {
+                margin-bottom: 15px;
+                font-size: 13px;
+                color: #666666;
+                line-height: 19px;
+                overflow: hidden;
+                max-height: 60px;
+            }
+
+            &__tags {
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: bold;
+                color: #5b5b5b;
+
+                .tag {
+                    margin-right: 20px;
+                    padding: 5px 20px 5px 0;
+
+                    &:not(:last-child) {
+                        border-right: #d2d2d2 1px solid;
+                    }
+                }
+            }
+
+            &__footer {
+
+                &__link {
+                    &:not(:last-child) {
+                        border-right: 1px solid #E2E2E2;
+                        margin-right: 20px;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+
+        &__footer {
+
+            &__link {
+                &:not(:last-child) {
+                    border-right: 1px solid #E2E2E2;
+                    margin-right: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        flex-direction: column;
+    }
+
+    &:hover {
+        transform: translate(0, -1px);
+        box-shadow: $beu-card-shadow-on-hover;
+    }
+}

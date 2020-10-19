@@ -1,0 +1,96 @@
+@import "~bootstrap/scss/bootstrap-grid";
+@import "../base/variable";
+
+.footer {
+  display: block;
+  border-top: $beu-border;
+
+  &__container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 43px;
+    padding-top: 32px;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+    }
+    @include media-breakpoint-down(md) {
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+
+  &__nav {
+    display: inline-block;
+
+    &__info {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 18px;
+      font-family: $beu-font-text;
+      color: $beu-text-primary-color;
+      pointer-events: none;
+      margin: 0 20px 10px 0;
+
+      &:last-child {
+        margin-bottom: 20px;
+        @include media-breakpoint-down(md) {
+          margin: 0 0 20px 0;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        margin: 0 0 10px 0 !important;
+      }
+    }
+
+    .footer-link {
+      &:not(:last-child) {
+        margin: 0 20px 0 0;
+
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 20px;
+        }
+        @include media-breakpoint-down(md) {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__rs {
+    //display: flex;
+    //flex: 1;
+    //justify-content: center;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .ic{
+      position: relative;
+      left: -56px;
+    }
+  }
+
+}

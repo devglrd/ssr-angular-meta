@@ -1,0 +1,232 @@
+/* You can add global styles to this file, and also import other style files */
+@import "base";
+@import "atoms";
+@import "molecules";
+@import "organismes";
+//@import "~@angular/cdk/overlay";
+//@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+// Ngx Toast Notifications
+//@import '~ngx-toastr/toastr-bs4-alert';
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.txt-red {
+  color: $beu-action-color;
+}
+
+.scroll {
+  overflow-y: scroll !important;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+//@include cdk-overlay();
+
+.rotate-90 {
+  transform: rotate(180deg);
+}
+
+b {
+  font-weight: bold !important;
+}
+
+i {
+  font-style: italic !important;
+}
+
+body {
+  font-size: 16px;
+  font-family: $beu-font-text !important;
+}
+
+.object-fit {
+  object-fit: contain
+}
+
+.website-wrapper {
+  height: 60vh;
+}
+
+.toast {
+  opacity: 1 !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.section {
+  margin: 50px auto;
+  max-width: 80%;
+
+  &-header {
+    margin-bottom: 30px;
+
+    &-title {
+      font-weight: 100;
+      font-size: 70px;
+    }
+  }
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+@media screen and (max-width: 1080px) {
+  .documents-container {
+    .main-headlines {
+      flex-direction: column;
+      align-items: flex-start !important;
+      margin-bottom: 20px;
+    }
+
+    .actions {
+      flex-direction: column;
+
+      .action {
+        margin-bottom: 5px;
+      }
+    }
+
+    .overlines {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      .date {
+        position: inherit !important;
+        text-align: left !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .all-documents {
+      .filters {
+        width: 90% !important;
+      }
+    }
+    .documents-list {
+      .document {
+        flex-direction: column;
+        //width: 94% !important;
+        .content {
+          width: 100% !important;
+          border: none !important;
+        }
+
+        .actions-container {
+          width: 100% !important;
+
+          .actions {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+    .header {
+      .headlines {
+        .title {
+          font-size: 35px !important;
+        }
+      }
+    }
+  }
+  .full-height {
+    margin-top: 80px;
+  }
+
+  @media screen and (max-width: 545px) {
+    .all-documents {
+      .filters {
+        height: auto !important;
+        display: flex;
+        flex-direction: column !important;
+        margin-bottom: 0 !important;
+
+        .filter-search {
+          width: 100% !important;
+        }
+      }
+    }
+    .header {
+      margin-bottom: 15px !important;
+
+      .title {
+        font-size: 55px !important;
+      }
+    }
+    .nav {
+      .items {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+
+        .item {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .documents-container {
+      &.container {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.draggable-helper-overlay {
+  pointer-events: none !important;
+}
+
+.draggable {
+  cursor: move;
+  user-select: none;
+}
+
+.form-control {
+  &.no-content {
+    border: unset !important;
+    background-color: unset !important;
+  }
+}
+
+button.angular-editor-button[title="Insert Image"] {
+  display: none;
+}
+
+.angular-editor-wrapper.show-placeholder {
+  overflow-y: hidden;
+}
+
+#angularEditor {
+  color: unset;
+}
+
+.angular-editor-textarea {
+  margin-top: 0 !important;
+}
+
+svg {
+
+  path {
+    //fill: #fff;
+    //stroke: #111;
+    //stroke-width: 2;
+    vector-effect: non-scaling-stroke;
+  }
+}

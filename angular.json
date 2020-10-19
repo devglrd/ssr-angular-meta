@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "src/sass/styles.scss"
             ],
             "scripts": []
           },
@@ -171,6 +172,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ssr-meta-http"
 }

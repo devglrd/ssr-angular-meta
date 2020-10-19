@@ -1,0 +1,45 @@
+@import "~bootstrap/scss/bootstrap-grid";
+@import "../base/variable";
+
+.nav {
+
+  &__items {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+
+    &__item {
+      position: relative;
+      display: inline-block;
+      margin: 0 30px 15px 0;
+      font-family: $beu-font-cta;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: $beu-text-primary-color;
+
+      &__link {
+        margin-bottom: 10px;
+
+        &.active {
+          padding-bottom: 5px;
+          color: $beu-text-secondary-color !important;
+          border-bottom: 4px solid $beu-text-secondary-color;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        width: auto;
+        margin: 10px 0;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0 0 0;
+    }
+  }
+
+}

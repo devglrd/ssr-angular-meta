@@ -1,0 +1,203 @@
+@import "../base/variable";
+
+.btn {
+    min-height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    border-radius: $beu-border-radius;
+    color: $beu-action-text-color !important;
+    text-transform: uppercase;
+    background-color: $beu-action-color;
+    font-family: $beu-font-cta;
+    transition: all 0.3s ease-in-out;
+    vertical-align: middle;
+    border-color: $beu-action-color;
+    box-shadow: none;
+    margin: 5px;
+
+    &-small {
+        @extend .btn;
+        min-height: 38px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    &.line {
+        min-height: 38px;
+        padding: 0 30px;
+    }
+
+
+    &.btn-flat {
+        background-color: transparent !important;
+        border: unset !important;
+        box-shadow: none !important;
+        color: $beu-action-color !important;
+
+        &:hover {
+            color: $beu-action-color-dark !important;
+            background-color: unset !important;
+            border: unset !important;
+            box-shadow: none !important;
+        }
+    }
+
+    &-with-icon {
+        @extend .btn;
+        display: inline-flex;
+        align-items: center;
+
+        .btn-icon {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+
+            &:not(.fill) path {
+                stroke: $beu-action-text-color;
+            }
+
+            &.fill path {
+                fill: $beu-action-text-color;
+            }
+        }
+    }
+
+    &.btn-full-width {
+        width: 100%;
+        margin: 0;
+    }
+
+    &.active, &:hover:not(:disabled), &:active {
+        background-color: $beu-action-color-dark;
+    }
+
+    &:focus {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    &:disabled {
+        border-color: $beu-action-disabled-color;
+        background-color: $beu-action-disabled-color;
+        color: $beu-action-disabled-text-color !important;
+    }
+
+    &.no-hover {
+    }
+}
+
+.btn-cta {
+    width: 36px;
+    height: 36px;
+    margin: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all 0.3s ease-in-out;
+    background-color: $beu-background;
+    border-radius: $beu-border-radius;
+    border: 1px solid $beu-action-color;
+
+    .btn-icon {
+        width: 15px;
+        height: auto;
+
+        &:not(.fill) path {
+            stroke: $beu-action-color !important;
+        }
+
+        &.fill path {
+            fill: $beu-action-color !important;
+        }
+
+    }
+
+    &.small {
+        width: 29px;
+        height: 29px;
+    }
+
+    &-rounded {
+        @extend .btn-cta;
+        height: 45px;
+        width: 45px;
+        border-radius: 25px;
+        border: $beu-border;
+
+
+        .btn-icon {
+            width: auto;
+            height: 15px;
+
+            &:not(.fill) path {
+                stroke: rgba($beu-text-primary-color, .3);
+            }
+
+            &.fill path {
+                fill: rgba($beu-text-primary-color, .3);
+            }
+        }
+    }
+
+    &-big {
+        @extend .btn-cta;
+        width: 50px;
+        height: 50px;
+    }
+
+    &.not-hover {
+        &:hover {
+            background-color: transparent;
+            box-shadow: $beu-box-shadow;
+        }
+    }
+
+    &:hover:not(:disabled) {
+        border: 1px solid $beu-action-color;
+        background-color: $beu-action-color-dark;
+        box-shadow: $beu-box-shadow;
+
+        .btn-icon {
+
+            &:not(.fill) path {
+                stroke: $beu-action-text-color !important;
+            }
+
+            &.fill path {
+                fill: $beu-action-text-color !important;
+            }
+        }
+
+    }
+
+    &:focus {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:disabled {
+        border-color: $beu-action-disabled-color;
+        background-color: $beu-action-disabled-color;
+
+        .btn-icon {
+
+            &:not(.fill) path {
+                stroke: $beu-action-disabled-text-color;
+            }
+
+            &.fill path {
+                fill: $beu-action-disabled-text-color;
+            }
+        }
+    }
+
+}

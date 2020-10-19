@@ -1,0 +1,90 @@
+@import "../base/variable";
+
+a, .link {
+  color: $beu-action-color !important;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: $beu-font-cta;
+  letter-spacing: -0.33px;
+  line-height: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+
+  &.is-disabled {
+    color: #9AA1A5 !important;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(.is-disabled) {
+    color: $beu-action-color-dark !important;
+  }
+
+  &.is-no-hover {
+    &:hover {
+      color: $beu-action-text-color !important;
+    }
+  }
+}
+
+.nav-link {
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  color: $beu-text-primary-color !important;
+  font-family: $beu-font-cta;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.42px;
+  line-height: $beu-topbar-height;
+  transition: all 0.3s ease-in-out;
+  text-transform: unset;
+
+  &.active, &:hover, &:focus {
+    color: $beu-text-secondary-color !important;
+    outline: none !important;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: $beu-topbar-height - 4px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: $beu-text-secondary-color;
+    }
+  }
+
+}
+
+.footer-link {
+  display: inline-block;
+  color: $beu-action-color !important;
+  font-family: $beu-font-cta;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  transition: all 0.3s ease-in-out;
+
+  &.active, &:hover, &:focus {
+    color: $beu-action-color-dark !important;
+    outline: none !important;
+  }
+
+}
+
+.card-link {
+  color: $beu-action-color;
+  font-family: $beu-font-cta;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -0.42px;
+  line-height: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: $beu-action-color-dark;
+  }
+
+}

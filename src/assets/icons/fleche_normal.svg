@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>fleche_normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icones" transform="translate(-134.000000, -1261.000000)" fill="#E83A4B">
+            <g id="navigation" transform="translate(131.000000, 1183.000000)">
+                <g id="fleche_normal" transform="translate(11.000000, 84.000000) scale(-1, 1) translate(-11.000000, -84.000000) translate(3.000000, 78.000000)">
+                    <path d="M15,5 L3.414,5 L6.707,1.707 C7.098,1.316 7.098,0.684 6.707,0.293 C6.316,-0.098 5.684,-0.098 5.293,0.293 L0.293,5.293 C-0.098,5.684 -0.098,6.316 0.293,6.707 L5.293,11.707 C5.488,11.902 5.744,12 6,12 C6.256,12 6.512,11.902 6.707,11.707 C7.098,11.316 7.098,10.684 6.707,10.293 L3.414,7 L15,7 C15.553,7 16,6.552 16,6 C16,5.448 15.553,5 15,5" id="Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

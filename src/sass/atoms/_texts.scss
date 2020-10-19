@@ -1,0 +1,72 @@
+@import "~bootstrap/scss/bootstrap-grid";
+@import "../base/variable";
+
+.text {
+  color: $beu-text-secondary-color;
+  font-size: 16px;
+  letter-spacing: -0.42px;
+  line-height: 22px;
+  margin-bottom: 15px;
+
+  &-bold {
+    @extend .text;
+    font-weight: bold;
+  }
+
+  &-chapo {
+    @extend .text;
+    font-size: 24px;
+    line-height: 31px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+      letter-spacing: -0.35px;
+      line-height: 26px;
+    }
+  }
+
+  &-mention {
+    @extend .text;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &-opinion {
+    color: $beu-text-primary-color;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 47px;
+    letter-spacing: -1px;
+
+    &:before {
+      content: '”';
+      height: 50px;
+      display: block;
+      color: #00a293;
+      font-size: 100px;
+      font-weight: bold;
+      line-height: 100%;
+      font-family: $beu-font-opinion;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+      letter-spacing: -0.56px;
+      line-height: 26px;
+    }
+
+  }
+
+  &-overline {
+    color: $beu-text-primary-color;
+    font-family: $beu-font-text;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.42px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+
+}
+

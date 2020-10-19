@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bouton édition</title>
+    <g id="Evolution-2020" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04a---Action---Demarrer---Desktop" transform="translate(-644.000000, -181.000000)">
+            <g id="contenu" transform="translate(0.000000, 85.000000)">
+                <g id="modèle" transform="translate(130.000000, 37.000000)">
+                    <g id="bouton-édition" transform="translate(514.000000, 59.000000)">
+                        <rect id="Rectangle" stroke="#E83A4B" x="0.5" y="0.5" width="23" height="23" rx="3"></rect>
+                        <g id="edition_normal" transform="translate(5.000000, 5.000000)" fill="#E83A4B">
+                            <path d="M1.4,10.896 L8.08473282,4.2 L9.8,5.916 L3.10725191,12.6 L1.4,12.6 L1.4,10.896 Z M10.8162963,1.4 L12.6,3.18106509 L11.5795556,4.2 L9.8,2.42307692 L10.8162963,1.4 Z M0.652782095,14 L3.42928194,14 C3.60335717,14 3.76872863,13.9304564 3.89058129,13.808755 L13.8085173,3.90313567 C13.9303699,3.78143434 14,3.61192176 14,3.44240919 C14,3.26855014 13.9303699,3.10338404 13.8085173,2.98168271 L11.0146099,0.191244955 C10.8927572,0.06954362 10.7273858,0 10.5533105,0 C10.3792353,0 10.2138638,0.06954362 10.0920112,0.191244955 L0.191482748,10.1142502 C0.0696300901,10.240298 0,10.4054641 0,10.5749767 L0,13.3480286 C0,13.7087861 0.291576002,14 0.652782095,14 L0.652782095,14 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

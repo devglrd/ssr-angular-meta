@@ -1,0 +1,18 @@
+@import "../../../../../sass/base/variable";
+
+.header {
+  height: $beu-topbar-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 70px;
+  opacity: 0.67;
+  background-color: #fff;
+
+  .header-logo {
+    height: auto;
+    width: 85px;
+    cursor: pointer;
+  }
+}

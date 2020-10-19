@@ -1,0 +1,29 @@
+.adding-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  .form-control {
+    width: 90.4%;
+    margin-right: 20px;
+  }
+
+  .btn-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #414141;
+
+    .icon {
+      position: unset;
+      left: unset;
+      top: unset;
+      width: 24px;
+      height: auto;
+    }
+  }
+}
