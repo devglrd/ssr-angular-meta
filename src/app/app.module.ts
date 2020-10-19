@@ -12,8 +12,11 @@ export function initApp(http: HttpClient, meta: Meta) {
       console.log(res);
       const article = res.data;
       meta.addTag({name: 'og:title', content: article.title.fr});
-      meta.addTag({name: 'og:description', content: article.intro.fr.replace(/<[^>]*>/g, '').replace('&amp;nbsp;', '')});
+      // meta.addTag({name: 'og:description', content: article.intro.fr.replace(/<[^>]*>/g, '').replace('&amp;nbsp;', '')});
       meta.addTag({name: 'og:image', content: article.get_file.file});
+      meta.addTag({name: 'og:type', content: 'website'});
+      meta.addTag({name: 'og:url', content: 'https://be-u.ingies.net/news/' + article.slug});
+      meta.addTag({name: 'og:image:secure', content: article.get_file.file});
     });
   };
 }
